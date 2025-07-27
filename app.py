@@ -25,7 +25,7 @@ Stay consistent. Reflect daily. Build your future 💪
 """)
 
 # Optional reminder message
-now = datetime.now().hour
+now = get_local_time().hour
 if 22 <= now <= 23:
     st.warning("🛌 It's getting late. Consider planning for proper sleep!")
 elif 13 <= now <= 14:
