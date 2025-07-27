@@ -95,4 +95,4 @@ This project is open source under the [MIT License](LICENSE).
 
 ---
 
-> Made with ❤️ by [Your Name] | Powered by [Streamlit](https://streamlit.io)
+> Made with ❤️ by Vishal Verma | Powered by [Streamlit](https://streamlit.io)
