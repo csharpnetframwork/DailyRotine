@@ -17,9 +17,6 @@ A smart personal productivity and goal-tracking dashboard built with **Streamlit
 
 ---
 
-## 📸 Screenshots
-
-*(Add your own screenshots here if deploying to GitHub or Streamlit Cloud)*
 
 | Daily Planner | Progress Charts | Goal Tracker |
 |---------------|------------------|---------------|
