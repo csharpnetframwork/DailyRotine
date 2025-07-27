@@ -1,0 +1,16 @@
+date,task,category,status
+2025-07-28,Wake up at 7:00 AM,Routine,Incomplete
+2025-07-28,Get fresh by 7:15 AM,Routine,Incomplete
+2025-07-28,Yoga for 45 mins,Fitness,Incomplete
+2025-07-28,Shop for 20 mins,Errands,Incomplete
+2025-07-28,Bath and brush (30 mins),Routine,Incomplete
+2025-07-28,Get ready for job (30 mins),Routine,Incomplete
+2025-07-28,Work from 9:30 AM to 6:30 PM,Work,Incomplete
+2025-07-28,Evening shop till 8:30 PM,Errands,Incomplete
+2025-07-28,Learn .NET (1 hour),Learning,Incomplete
+2025-07-28,Learn Python (1 hour),Learning,Incomplete
+2025-07-28,Work on Git projects,Learning,Incomplete
+2025-07-28,Sleep for 8 hours,Health,Incomplete
+2025-07-28,09:00:00,Study ML Lecture,Study,False
+2025-07-28,11:00:00,Practice coding,Work,False
+2025-07-28,15:00:00,Gym workout,Health,False
