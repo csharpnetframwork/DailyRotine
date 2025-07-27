@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
-from datetime import datetime
 import os
+from utils import get_local_time  # ✅ Import local time helper
 
 # Ensure data directory exists
 os.makedirs("data", exist_ok=True)
@@ -21,7 +21,8 @@ st.header("✅ Daily Review")
 task_path = "data/daily_tasks.csv"
 review_path = "data/daily_reviews.csv"
 
-today = str(datetime.today().date())
+# ✅ Use IST time
+today = str(get_local_time().date())
 
 # Load and normalize today's tasks
 if os.path.exists(task_path):
