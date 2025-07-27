@@ -1,5 +1,8 @@
 import streamlit as st
 from datetime import datetime
+from utils import get_local_time
+
+now = get_local_time()
 
 st.set_page_config(
     page_title="My Life Dashboard",
