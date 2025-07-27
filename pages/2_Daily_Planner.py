@@ -1,7 +1,9 @@
 import streamlit as st
 import pandas as pd
-from datetime import datetime, time
+from datetime import time
 import os
+from utils import get_local_time  # ✅ Import local time helper
+
 os.makedirs("data", exist_ok=True)
 
 def normalize_tasks(df):
@@ -37,14 +39,15 @@ with st.form("add_task"):
     category = st.selectbox("Category", ["Work", "Health", "Study", "Personal", "Other"])
     submitted = st.form_submit_button("Add Task")
     if submitted and task:
-        new_task = pd.DataFrame([[datetime.today().date(), task_time, task, category, False]],
+        local_date = get_local_time().date()  # ✅ use local time
+        new_task = pd.DataFrame([[local_date, task_time, task, category, False]],
                                 columns=["Date", "Time", "Task", "Category", "Completed"])
         new_task.to_csv(task_path, mode='a', header=not os.path.exists(task_path), index=False)
         st.success("Task added!")
 
 # Show today's tasks
 st.subheader("📅 Today's Plan")
-today = str(datetime.today().date())
+today = str(get_local_time().date())  # ✅ use local time here too
 tasks_df = normalize_tasks(pd.read_csv(task_path, on_bad_lines='skip'))
 today_tasks = tasks_df[tasks_df["Date"] == today]
 
